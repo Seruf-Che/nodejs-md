@@ -7,6 +7,9 @@ const schema = new Schema({
     lat: {type: String, required: true},
     lon: {type: String, required: true}
   }},
+  population: {type: String, required: true},
+  area: {type: String, required: true},
+  founded: {type: Date, required: true},
   user: {type: Schema.Types.objectId, ref: "User"}
 });
 
