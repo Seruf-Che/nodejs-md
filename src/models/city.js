@@ -10,7 +10,7 @@ const schema = new Schema({
   population: {type: String, required: true},
   area: {type: String, required: true},
   founded: {type: Date, required: true},
-  user: {type: Schema.Types.objectId, ref: "User"}
+  user: {type: Schema.Types.ObjectId, ref: "User", required: true}
 });
 
 module.exports = mongoose.model("City", schema);
