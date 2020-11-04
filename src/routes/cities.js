@@ -26,5 +26,4 @@ router
     res.send(`City ${id} deleted`);
   });
 
-
 module.exports = router;
