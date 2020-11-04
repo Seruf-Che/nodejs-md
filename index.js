@@ -17,7 +17,8 @@ mongoose.connect(
   `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@nodejs-md.axtof.mongodb.net/${process.env.MONGO_DB_DBNAME}?w=majority`,
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
   }
 )
   .then(() => console.log("Connected to database"))
